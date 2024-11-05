@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador</title>
+</head>
+<body>
+    <h1>Verificador de Nacionalidades</h1>
+    <input type="text" name="Nacionalidades" id="nacionalidades">
+    <input type="button" value="Verificar" onclick="verificador()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificador(){
+            var nacionalidade = document.getElementById('nacionalidades').value
+            var res = document.getElementById ('res')
+            res.innerHTML = `<p>O seu país é o ${nacionalidade}</p>` 
+            if (nacionalidade == 'Brasil') {
+                res.innerHTML +=('<p>Você é brasileiro!</p>')
+            }
+            else{
+                res.innerHTML +=('<p> Você é estrangeiro!</p>')
+            }
+        }
+
+    </script>
+</body>
+</html>
