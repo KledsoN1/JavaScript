@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(245, 245, 53, 0.696);
+            color: rgb(173, 3, 3);
+            text-align: center;
+        }
+        img{
+            width: 350px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pizzaria</h1>
+    </header>
+    <main>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/8a/bf/5e/benvinda-pizza-delivery.jpg?w=600&h=400&s=1" alt="pizza">
+    </main>
+
+    <script>
+        var valor = Number(prompt('Qual valor do pedido ?'))
+        var pessoas = Number(prompt('Quantas pessoas irão pagar? '))
+        var dividindo = valor / pessoas 
+        alert(`Sua conta deu ${valor} e será divido por ${pessoas} e fica ${dividindo} para cada pagar`)
+    </script>
+</body>
+</html>
