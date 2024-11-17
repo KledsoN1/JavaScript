@@ -16,12 +16,14 @@ section {
     width: 500px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.455);
     border-radius: 20px;
+    height: 350px;
     
 
 }
 div {
     padding: 10px;
 }
+
 footer{
     text-align: center;
     color: white;
